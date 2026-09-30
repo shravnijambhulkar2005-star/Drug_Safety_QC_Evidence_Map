@@ -1,0 +1,297 @@
+{
+    "schema_name": "BHIV_Drug_Safety_Evidence",
+    "schema_version": "1.0.0",
+    "record_count": 10,
+    "records": [
+        {
+            "evidence_id": "EV001",
+            "source": "FAERS/AEMS",
+            "source_organisation": "FDA",
+            "evidence_type": "Adverse Event Report",
+            "drug_product_identifier": "Drug A",
+            "observation": "Headache reported after exposure",
+            "date": "2026-08-01",
+            "population_context": "Adult population; details incomplete",
+            "measurement_result": "Not applicable",
+            "supporting_documentation": "Original safety report",
+            "evidence_provenance": {
+                "original_source": "FAERS/AEMS",
+                "original_evidence_id": "EV001",
+                "ingestion_timestamp": "2026-09-29T11:10:18.905226+00:00",
+                "source_version": "existing_test1_csv",
+                "transformation_path": [
+                    "existing_csv",
+                    "field_mapping",
+                    "canonical_normalization"
+                ]
+            },
+            "evidence_quality": "Moderate",
+            "validation_status": "Validated",
+            "limitations": "Limited clinical information",
+            "reviewer_action": "Review with other available evidence",
+            "human_review_flag": true,
+            "interpretation": ""
+        },
+        {
+            "evidence_id": "EV002",
+            "source": "FAERS/AEMS",
+            "source_organisation": "FDA",
+            "evidence_type": "Adverse Event Report",
+            "drug_product_identifier": "Drug A",
+            "observation": "Nausea reported after exposure",
+            "date": "2026-08-02",
+            "population_context": "Adult population; details incomplete",
+            "measurement_result": "Not applicable",
+            "supporting_documentation": "Original safety report",
+            "evidence_provenance": {
+                "original_source": "FAERS/AEMS",
+                "original_evidence_id": "EV002",
+                "ingestion_timestamp": "2026-09-29T11:10:18.905333+00:00",
+                "source_version": "existing_test1_csv",
+                "transformation_path": [
+                    "existing_csv",
+                    "field_mapping",
+                    "canonical_normalization"
+                ]
+            },
+            "evidence_quality": "Moderate",
+            "validation_status": "Validated",
+            "limitations": "Alternative causes cannot be excluded",
+            "reviewer_action": "Review with other available evidence",
+            "human_review_flag": true,
+            "interpretation": ""
+        },
+        {
+            "evidence_id": "EV003",
+            "source": "PubMed",
+            "source_organisation": "National Library of Medicine",
+            "evidence_type": "Literature",
+            "drug_product_identifier": "Drug A",
+            "observation": "Published article discusses a possible association with headache",
+            "date": "2026-08-03",
+            "population_context": "Published study population",
+            "measurement_result": "Not applicable",
+            "supporting_documentation": "Published scientific article",
+            "evidence_provenance": {
+                "original_source": "PubMed",
+                "original_evidence_id": "EV003",
+                "ingestion_timestamp": "2026-09-29T11:10:18.905386+00:00",
+                "source_version": "existing_test1_csv",
+                "transformation_path": [
+                    "existing_csv",
+                    "field_mapping",
+                    "canonical_normalization"
+                ]
+            },
+            "evidence_quality": "High",
+            "validation_status": "Validated",
+            "limitations": "Study limitations apply",
+            "reviewer_action": "Compare with other evidence",
+            "human_review_flag": true,
+            "interpretation": ""
+        },
+        {
+            "evidence_id": "EV004",
+            "source": "DailyMed",
+            "source_organisation": "National Library of Medicine",
+            "evidence_type": "Product Label",
+            "drug_product_identifier": "Drug A",
+            "observation": "Headache listed in product information",
+            "date": "2026-08-04",
+            "population_context": "Product information",
+            "measurement_result": "Not applicable",
+            "supporting_documentation": "Product labeling document",
+            "evidence_provenance": {
+                "original_source": "DailyMed",
+                "original_evidence_id": "EV004",
+                "ingestion_timestamp": "2026-09-29T11:10:18.905430+00:00",
+                "source_version": "existing_test1_csv",
+                "transformation_path": [
+                    "existing_csv",
+                    "field_mapping",
+                    "canonical_normalization"
+                ]
+            },
+            "evidence_quality": "High",
+            "validation_status": "Validated",
+            "limitations": "Label information does not establish causality for an individual case",
+            "reviewer_action": "No further action in sample dataset",
+            "human_review_flag": false,
+            "interpretation": ""
+        },
+        {
+            "evidence_id": "EV005",
+            "source": "ClinicalTrials.gov",
+            "source_organisation": "U.S. National Library of Medicine",
+            "evidence_type": "Clinical Trial",
+            "drug_product_identifier": "Drug A",
+            "observation": "Headache observed during hypothetical study",
+            "date": "2026-08-05",
+            "population_context": "Adult study population; fictional record",
+            "measurement_result": "Not applicable",
+            "supporting_documentation": "Clinical trial record",
+            "evidence_provenance": {
+                "original_source": "ClinicalTrials.gov",
+                "original_evidence_id": "EV005",
+                "ingestion_timestamp": "2026-09-29T11:10:18.905471+00:00",
+                "source_version": "existing_test1_csv",
+                "transformation_path": [
+                    "existing_csv",
+                    "field_mapping",
+                    "canonical_normalization"
+                ]
+            },
+            "evidence_quality": "High",
+            "validation_status": "Validated",
+            "limitations": "Fictional demonstration record",
+            "reviewer_action": "Review alongside other evidence",
+            "human_review_flag": true,
+            "interpretation": ""
+        },
+        {
+            "evidence_id": "EV006",
+            "source": "Laboratory QC",
+            "source_organisation": "Source organisation not specified",
+            "evidence_type": "Laboratory Result",
+            "drug_product_identifier": "Drug A",
+            "observation": "Batch B001 shows an unusual analytical result requiring investigation",
+            "date": "2026-08-06",
+            "population_context": "Fictional laboratory sample",
+            "measurement_result": "Result requires investigation",
+            "supporting_documentation": "Laboratory worksheet",
+            "evidence_provenance": {
+                "original_source": "Laboratory QC",
+                "original_evidence_id": "EV006",
+                "ingestion_timestamp": "2026-09-29T11:10:18.905521+00:00",
+                "source_version": "existing_test1_csv",
+                "transformation_path": [
+                    "existing_csv",
+                    "field_mapping",
+                    "canonical_normalization"
+                ]
+            },
+            "evidence_quality": "Moderate",
+            "validation_status": "Needs Review",
+            "limitations": "Applicable specification not provided in sample dataset",
+            "reviewer_action": "Human QC review required",
+            "human_review_flag": true,
+            "interpretation": ""
+        },
+        {
+            "evidence_id": "EV007",
+            "source": "Drug Quality Complaint",
+            "source_organisation": "Source organisation not specified",
+            "evidence_type": "Quality Complaint",
+            "drug_product_identifier": "Drug A",
+            "observation": "Tablet appearance complaint associated with Batch B002",
+            "date": "2026-08-07",
+            "population_context": "Fictional product complaint",
+            "measurement_result": "Not applicable",
+            "supporting_documentation": "Quality complaint record",
+            "evidence_provenance": {
+                "original_source": "Drug Quality Complaint",
+                "original_evidence_id": "EV007",
+                "ingestion_timestamp": "2026-09-29T11:10:18.905559+00:00",
+                "source_version": "existing_test1_csv",
+                "transformation_path": [
+                    "existing_csv",
+                    "field_mapping",
+                    "canonical_normalization"
+                ]
+            },
+            "evidence_quality": "Low",
+            "validation_status": "Incomplete",
+            "limitations": "Supporting documentation incomplete",
+            "reviewer_action": "Request additional information",
+            "human_review_flag": true,
+            "interpretation": ""
+        },
+        {
+            "evidence_id": "EV008",
+            "source": "Medication Error Report",
+            "source_organisation": "Source organisation not specified",
+            "evidence_type": "Medication Error",
+            "drug_product_identifier": "Drug A",
+            "observation": "Wrong administration route reported",
+            "date": "2026-08-08",
+            "population_context": "Fictional medication-use event",
+            "measurement_result": "Not applicable",
+            "supporting_documentation": "Medication error report",
+            "evidence_provenance": {
+                "original_source": "Medication Error Report",
+                "original_evidence_id": "EV008",
+                "ingestion_timestamp": "2026-09-29T11:10:18.905597+00:00",
+                "source_version": "existing_test1_csv",
+                "transformation_path": [
+                    "existing_csv",
+                    "field_mapping",
+                    "canonical_normalization"
+                ]
+            },
+            "evidence_quality": "Moderate",
+            "validation_status": "Unverified",
+            "limitations": "Source information requires verification",
+            "reviewer_action": "Verify source documentation",
+            "human_review_flag": true,
+            "interpretation": ""
+        },
+        {
+            "evidence_id": "EV009",
+            "source": "PubMed",
+            "source_organisation": "National Library of Medicine",
+            "evidence_type": "Literature",
+            "drug_product_identifier": "Drug A",
+            "observation": "Published study reports no clear association with the observed reaction",
+            "date": "2026-08-09",
+            "population_context": "Published study population",
+            "measurement_result": "Not applicable",
+            "supporting_documentation": "Published scientific article",
+            "evidence_provenance": {
+                "original_source": "PubMed",
+                "original_evidence_id": "EV009",
+                "ingestion_timestamp": "2026-09-29T11:10:18.905634+00:00",
+                "source_version": "existing_test1_csv",
+                "transformation_path": [
+                    "existing_csv",
+                    "field_mapping",
+                    "canonical_normalization"
+                ]
+            },
+            "evidence_quality": "High",
+            "validation_status": "Conflicting",
+            "limitations": "Findings conflict with another evidence record",
+            "reviewer_action": "Human scientific review required",
+            "human_review_flag": true,
+            "interpretation": ""
+        },
+        {
+            "evidence_id": "EV010",
+            "source": "Laboratory QC",
+            "source_organisation": "Source organisation not specified",
+            "evidence_type": "Laboratory Result",
+            "drug_product_identifier": "Drug A",
+            "observation": "Repeat laboratory record lacks sufficient supporting documentation",
+            "date": "2026-08-10",
+            "population_context": "Fictional laboratory sample",
+            "measurement_result": "Supporting data incomplete",
+            "supporting_documentation": "Laboratory record",
+            "evidence_provenance": {
+                "original_source": "Laboratory QC",
+                "original_evidence_id": "EV010",
+                "ingestion_timestamp": "2026-09-29T11:10:18.905671+00:00",
+                "source_version": "existing_test1_csv",
+                "transformation_path": [
+                    "existing_csv",
+                    "field_mapping",
+                    "canonical_normalization"
+                ]
+            },
+            "evidence_quality": "Low",
+            "validation_status": "Incomplete",
+            "limitations": "Raw supporting information is insufficient",
+            "reviewer_action": "Request additional documentation",
+            "human_review_flag": true,
+            "interpretation": ""
+        }
+    ]
+}

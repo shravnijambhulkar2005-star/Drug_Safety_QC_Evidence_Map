@@ -1,0 +1,139 @@
+{
+    "schema_name": "BHIV_Drug_Safety_Evidence",
+    "schema_version": "1.0.0",
+    "description": "Canonical versioned schema for normalized drug safety and quality evidence.",
+    "authority_boundaries": {
+        "automatic_causality_assessment": false,
+        "clinical_decision": false,
+        "regulatory_approval_decision": false,
+        "human_review_required_for_uncertainty": true
+    },
+    "required_fields": [
+        "evidence_id",
+        "source",
+        "source_organisation",
+        "evidence_type",
+        "drug_product_identifier",
+        "observation",
+        "date",
+        "population_context",
+        "measurement_result",
+        "supporting_documentation",
+        "evidence_provenance",
+        "evidence_quality",
+        "validation_status",
+        "limitations",
+        "reviewer_action",
+        "human_review_flag"
+    ],
+    "fields": {
+        "evidence_id": {
+            "type": "string",
+            "description": "Unique identifier assigned to the evidence record."
+        },
+        "source": {
+            "type": "string",
+            "description": "Original evidence source or system."
+        },
+        "source_organisation": {
+            "type": "string",
+            "description": "Organisation responsible for or associated with the source."
+        },
+        "evidence_type": {
+            "type": "string",
+            "description": "Type or category of evidence."
+        },
+        "drug_product_identifier": {
+            "type": "string",
+            "description": "Drug or product identifier associated with the evidence."
+        },
+        "observation": {
+            "type": "string",
+            "description": "What was actually reported or observed."
+        },
+        "date": {
+            "type": "string",
+            "format": "YYYY-MM-DD",
+            "description": "Date associated with the evidence record."
+        },
+        "population_context": {
+            "type": "string",
+            "description": "Population, study, laboratory, product, or other context."
+        },
+        "measurement_result": {
+            "type": "string",
+            "description": "Reported measurement or result, when applicable."
+        },
+        "supporting_documentation": {
+            "type": "string",
+            "description": "Document or material supporting the evidence."
+        },
+        "evidence_provenance": {
+            "type": "object",
+            "required_fields": [
+                "original_source",
+                "original_evidence_id",
+                "transformation_path"
+            ],
+            "fields": {
+                "original_source": {
+                    "type": "string",
+                    "description": "Original source from which the record originated."
+                },
+                "original_evidence_id": {
+                    "type": "string",
+                    "description": "Identifier used by the original source or source dataset."
+                },
+                "ingestion_timestamp": {
+                    "type": "string",
+                    "description": "Timestamp when the evidence entered the integration pipeline."
+                },
+                "source_version": {
+                    "type": "string",
+                    "description": "Source dataset or source version when available."
+                },
+                "transformation_path": {
+                    "type": "array",
+                    "description": "Ordered list of transformations applied to the evidence."
+                }
+            }
+        },
+        "evidence_quality": {
+            "type": "string",
+            "allowed_values": [
+                "High",
+                "Moderate",
+                "Low",
+                "Unknown"
+            ],
+            "description": "Recorded assessment of evidence quality."
+        },
+        "validation_status": {
+            "type": "string",
+            "allowed_values": [
+                "Validated",
+                "Incomplete",
+                "Unverified",
+                "Conflicting",
+                "Needs Review"
+            ],
+            "description": "Current validation state of the evidence record."
+        },
+        "limitations": {
+            "type": "string",
+            "description": "Known limitations or missing information."
+        },
+        "reviewer_action": {
+            "type": "string",
+            "description": "Recommended human review or follow-up action."
+        },
+        "human_review_flag": {
+            "type": "boolean",
+            "description": "Indicates whether human review is required."
+        },
+        "interpretation": {
+            "type": "string",
+            "description": "Optional interpretation kept separate from the raw observation."
+        }
+    }
+}

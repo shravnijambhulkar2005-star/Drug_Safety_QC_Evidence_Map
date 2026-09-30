@@ -18,26 +18,6 @@ The primary integration entry point is:
 integration/evidence_integration.py
 
 ---
-## 2. Core Execution Flow
-
-The capability follows this deterministic flow:
-
-1. **Integration orchestration** — `integration/evidence_integration.py`
-
-   * Coordinates the end-to-end evidence processing flow.
-   * Produces the structured integrated evidence output.
-
-2. **Evidence normalization** — `normalization/normalize_evidence.py`
-
-   * Converts source records into the canonical evidence structure.
-   * Preserves source and provenance information while separating observation from interpretation.
-
-3. **Evidence validation** — `validation/validate_evidence.py`
-
-   * Checks required fields, evidence types, validation states, provenance, and structural data quality.
-   * Flags invalid or uncertain records for appropriate human review.
-
-Supporting modules for drug/product matching, duplicate detection, conflict detection, and human-review handling are invoked as part of the integration flow but are not counted as additional critical files in this three-file execution view.
 
 ## 3. Live Flow
 

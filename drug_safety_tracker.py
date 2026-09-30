@@ -141,7 +141,7 @@ def display_records(records):
         if record["Human_Review_Required"].lower() == "yes":
 
             print(
-                "⚠ HUMAN REVIEW REQUIRED"
+                "HUMAN REVIEW REQUIRED"
             )
 
     print(
